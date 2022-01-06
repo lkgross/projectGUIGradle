@@ -1,0 +1,171 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+group 'bsu.comp152'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+
+javafx {
+    version = '11'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task borderPaneDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.BorderPaneDemo'
+    }
+}
+
+task buttonDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.ButtonDemo'
+    }
+}
+
+task eventDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.EventDemo'
+    }
+}
+
+task eventDemoB {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.EventDemoB'
+    }
+}
+
+task gridPaneDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.GridPaneDemo'
+    }
+}
+
+task gridPaneImages {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.GridPaneImages'
+    }
+}
+
+task helloRandomPosition {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.HelloRandomPosition'
+    }
+}
+
+task helloWorld {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.HelloWorld'
+    }
+}
+
+task helloWorld2 {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.HelloWorld2'
+    }
+}
+
+task imageDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.ImageDemo'
+    }
+}
+
+task kiloConverter {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.KiloConverter'
+    }
+}
+
+task kiloConverterAnon {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.KiloConverterAnon'
+    }
+}
+
+task kiloConverterLambda {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.KiloConverterLambda'
+    }
+}
+
+task kiloConverterObservableList {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.KiloConverterObservableList'
+    }
+}
+
+task myFirstGUI {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.MyFirstGUI'
+    }
+}
+
+task ticTacToeBoard {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.TicTacToeBoard'
+    }
+}
+
+task vBoxDemo {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.VBoxDemo'
+    }
+}
+
+task vBoxImagesWithPadding {
+    group = 'Demos'
+    finalizedBy 'run'
+    doLast {
+        mainClassName = 'bsu.comp152.VBoxImagesWithPadding'
+    }
+}
